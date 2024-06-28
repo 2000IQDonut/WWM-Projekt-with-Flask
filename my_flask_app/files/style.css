@@ -1,0 +1,679 @@
+/*Generell*/
+
+body
+	{
+		font-family: garamond;
+	}
+
+.background
+	{
+		background-image: url('images/background.jpeg');
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;		
+	}
+	
+.logo
+	{
+		position: fixed;
+		width: 15%;
+		left: 42.5%;
+		top: 25%;
+	}
+
+/*infosite*/
+
+.info-title
+	{
+		font-weight: bold;
+		font-size: 75px;
+		text-align: center;
+	}
+
+.info-text
+	{
+		font-weight: bold;
+		font-size: 50px;
+		text-align: left;
+		margin-left: 50px;
+	}
+	
+.info-ending
+	{
+		font-weight: bold;
+		font-size: 45px;
+		text-align: left;
+		margin-left: 50px;
+	}
+	
+.exit-button
+	{
+		position: fixed;
+		font-size: 20px;
+		font-weight: bold;
+		color: white;
+		text-align: center;
+		text-decoration: none;
+		background-color: red;
+		border: none;
+		border-radius: 20px;
+		padding: 10px 10px;
+		left: 1%;
+		top: 2%;
+		transition: transform 0.5s;
+	}
+	
+.exit-button:hover
+	{
+		background-color: #b80000;
+		transform: scale(1.1);
+		cursor: pointer;
+	}
+	
+.exit-button:active
+	{
+		background-color: #b80000;
+	}
+	
+
+/*startsite*/
+
+@keyframes title
+	{
+		 0% {color: green;}
+		25% {color: yellow;}
+		50% {color: red;}
+		75% {color: purple;}
+		100% {color: black;}
+	}
+
+.title
+	{
+		font-weight: bold;
+		font-size: 75px;
+		text-align: center;
+		margin-top: 100px;
+		animation-name: title;
+		animation-duration: 4s;
+		animation-fill-mode: forwards;
+	}
+
+.start-button
+	{
+		position: fixed;
+		font-size: 50px;
+		font-weight: bold;
+		color: white;
+		text-align: center;
+		text-decoration: none;
+		background-color: red;
+		border: none;
+		border-radius: 20px;
+		padding: 15px 10px;
+		width: 15%;
+		left: 42%;
+		top: 60%;
+		
+		transition: transform 0.5s;
+	}
+	
+.start-button:hover
+	{
+		background-color: #b80000;
+		transform: scale(1.1);
+		cursor: pointer;
+	}
+	
+.start-button:active
+	{
+		background-color: #b80000;
+	}
+
+.info
+	{
+		position: fixed;
+		width: 75px;
+		left: 1%;
+		top: 89.5%;
+		transition: transform 0.5s;
+	}
+	
+.info:hover
+	{
+		transform: scale(1.2);
+		cursor: pointer;
+	}
+
+
+/*questionsite*/
+
+.background-questionsite1
+	{
+		background-image: url('images/background questionsite 1.jpeg');
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: 100% 150%;	
+	}
+	
+.background-questionsite2
+	{
+		background-image: url('images/background questionsite 2.jpeg');
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;	
+	}
+	
+.background-questionsite3
+	{
+		background-image: url('images/background questionsite 3.jpeg');
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;	
+	}
+	
+.background-questionsite4
+	{
+		background-image: url('images/background questionsite 4.jpeg');
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: 100% 125%;	
+	}
+	
+.background-questionsite5
+	{
+		background-image: url('images/background questionsite 5.jpeg');
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;	
+	}
+	
+.background-questionsite6
+	{
+		background-image: url('images/background questionsite 6.jpeg');
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;	
+	}
+	
+.background-questionsite7
+	{
+		background-image: url('images/background questionsite 7.jpeg');
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;	
+	}
+	
+.background-questionsite8
+	{
+		background-image: url('images/background questionsite 8.jpeg');
+		background-attachment: fixed;
+		background-size: cover;	
+	}
+
+.background-questionsite9
+	{
+		background-image: url('images/background questionsite 9.jpeg');
+		background-attachment: fixed;
+		background-size: cover;	
+	}
+
+.background-questionsite10
+	{
+		background-image: url('images/background questionsite 10.jpeg');
+		background-attachment: fixed;
+		background-size: cover;	
+	}
+	
+@keyframes question-answer-table1-3
+	{
+		from {left: -1500px; top: 450px;}
+		to {left: 300px; top: 450px;}
+	}
+
+@keyframes question-answer-table4-6
+	{
+		from {left: 1500px; top: 450px;}
+		to {left: 300px; top: 450px;}
+	}
+	
+@keyframes question-answer-table7-9
+	{
+		from {left: 300px; top: 1000px;}
+		to {left: 300px; top: 450px;}
+	}
+
+@keyframes question-answer-table10
+	{
+		from {left: 300px; top: -300px;}
+		to {left: 300px; top: 450px;}
+	}
+
+.question-answer1
+	{
+		border: 5px solid black;
+		border-radius: 70px;
+		font-size: 35px;
+		color: white;
+		padding: 10px 15px;
+		width: 600px;
+		position: relative;
+		animation-name: question-answer-table1-3;
+		animation-duration: 4s;
+		animation-fill-mode: forwards;
+	}
+
+.question-answer2
+	{
+		border: 5px solid black;
+		border-radius: 70px;
+		font-size: 35px;
+		color: white;
+		padding: 10px 15px;
+		width: 600px;
+		position: relative;
+		animation-name: question-answer-table1-3;
+		animation-duration: 4s;
+		animation-fill-mode: forwards;
+	}
+
+.question-answer3
+	{
+		border: 5px solid black;
+		border-radius: 70px;
+		font-size: 35px;
+		color: white;
+		padding: 10px 15px;
+		width: 600px;
+		position: relative;
+		animation-name: question-answer-table1-3;
+		animation-duration: 4s;
+		animation-fill-mode: forwards;
+	}
+
+.question-answer4
+	{
+		border: 5px solid black;
+		border-radius: 70px;
+		font-size: 35px;
+		color: white;
+		padding: 10px 15px;
+		width: 600px;
+		position: relative;
+		animation-name: question-answer-table4-6;
+		animation-duration: 4s;
+		animation-fill-mode: forwards;
+	}
+
+.question-answer5
+	{
+		border: 5px solid black;
+		border-radius: 70px;
+		font-size: 35px;
+		color: white;
+		padding: 10px 15px;
+		width: 600px;
+		position: relative;
+		animation-name: question-answer-table4-6;
+		animation-duration: 4s;
+		animation-fill-mode: forwards;
+	}
+	
+.question-answer6
+	{
+		border: 5px solid black;
+		border-radius: 70px;
+		font-size: 35px;
+		color: white;
+		padding: 10px 15px;
+		width: 600px;
+		position: relative;
+		animation-name: question-answer-table4-6;
+		animation-duration: 4s;
+		animation-fill-mode: forwards;
+	}
+
+.question-answer7
+	{
+		border: 5px solid black;
+		border-radius: 70px;
+		font-size: 35px;
+		color: white;
+		padding: 10px 15px;
+		width: 600px;
+		position: relative;
+		animation-name: question-answer-table7-9;
+		animation-duration: 4s;
+		animation-fill-mode: forwards;
+	}
+
+.question-answer8
+	{
+		border: 5px solid black;
+		border-radius: 70px;
+		font-size: 35px;
+		color: white;
+		padding: 10px 15px;
+		width: 600px;
+		position: relative;
+		animation-name: question-answer-table7-9;
+		animation-duration: 4s;
+		animation-fill-mode: forwards;
+	}
+
+.question-answer9
+	{
+		border: 5px solid black;
+		border-radius: 70px;
+		font-size: 35px;
+		color: white;
+		padding: 10px 15px;
+		width: 600px;
+		position: relative;
+		animation-name: question-answer-table7-9;
+		animation-duration: 4s;
+		animation-fill-mode: forwards;
+	}
+
+.question-answer10
+	{
+		border: 5px solid black;
+		border-radius: 70px;
+		font-size: 35px;
+		color: white;
+		padding: 10px 15px;
+		width: 600px;
+		position: relative;
+		animation-name: question-answer-table10;
+		animation-duration: 4s;
+		animation-fill-mode: forwards;
+	}
+
+.border-spacing
+	{
+		border-spacing: 10px;
+	}
+
+.answer-number
+	{
+		font-weight: bold;
+	}
+
+.answer-link
+	{
+		text-decoration: none;
+		color: white;
+		cursor: pointer;
+	}
+	
+.answer-link:hover
+	{
+		color: grey;
+	}
+	
+.break
+	{
+		padding: 30.25px 15px;
+	}
+
+.background-color
+	{
+		background-color: black;
+	}
+
+@keyframes logo
+	{
+		from {left: 42.5%; top: -600px;}
+		to {left: 42.5%; top: 12%;}
+	}
+
+.logo-questionsite
+	{
+		position: fixed;
+		width: 15%;
+		animation-name: logo;
+		animation-duration: 4s;
+		animation-fill-mode: forwards;
+	}
+
+.current-price
+	{
+		border: 3px solid black;
+		border-radius: 15px;
+		font-size: 20px;
+		background-color: black;
+		color: white;
+		text-align: center;
+		padding: 5px 10px;
+		position: relative;
+		width: 100%;
+		right: -1750px;
+		top: -300px;
+	}
+	
+.question-price
+	{
+		background-color: grey;
+	}
+	
+.earned-price
+	{
+		background-color: green;
+	}
+	
+.one-million-question
+	{
+		background-color: #FFD700;
+	}
+	
+
+/*lostsite*/
+
+@keyframes lost
+	{
+		from {margin-top: -250px}
+		to {margin-top: 250px}
+	}
+
+.lost
+	{
+		font-size: 150px;
+		font-weight: bold;
+		color: red;
+		text-align: center;
+		margin-top: 250px;
+		animation-name: lost;
+		animation-duration: 4s;
+		animation-fill-mode: forwards;		
+	}
+
+.back-to-menu-lost
+	{
+		position: fixed;
+		font-weight: bold;
+		font-size: 40px;
+		color: white;
+		text-align: center;
+		text-decoration: none;
+		background-color: red;
+		border: none;
+		border-radius: 20px;
+		padding: 10px 10px;
+		width: 20%;
+		left: 40%;
+		transition: transform 0.5s;
+		animation-name: won-or-lost-button;
+		animation-duration: 4s;
+		animation-fill-mode: forwards;
+	}
+	
+.back-to-menu-lost:hover
+	{
+		background-color: #b80000;
+		transform: scale(1.1);
+		cursor: pointer;
+	}
+	
+.back-to-menu-lost:active
+	{
+		background-color: #b80000;
+	}
+	
+
+/*wonsite*/
+
+@keyframes won
+	{
+		from {margin-top: -100px}
+		to {margin-top: 250px}
+	}
+	
+@keyframes won-price
+	{
+		from {margin-top: -500px}
+		to {margin-top: 25px}
+	}
+
+@keyframes won-button
+	{
+		from {margin-top: 2000px}
+		to {margin-top: -10px}
+	}
+
+.won
+	{
+		font-size: 50px;
+		font-weight: bold;
+		color: green;
+		text-align: center;
+		margin-top: 250px;
+		animation-name: won;
+		animation-duration: 4s;
+		animation-fill-mode: forwards;
+	}
+
+.won-price
+	{
+		font-size: 100px;
+		font-weight: bold;
+		color: green;
+		text-align: center;
+		margin-top: 25px;
+		animation-name: won-price;
+		animation-duration: 4s;
+		animation-fill-mode: forwards;
+	}
+
+.back-to-menu-won
+	{
+		position: fixed;
+		font-weight: bold;
+		font-size: 40px;
+		color: white;
+		text-align: center;
+		text-decoration: none;
+		background-color: green;
+		border: none;
+		border-radius: 20px;
+		padding: 10px 10px;
+		width: 20%;
+		left: 40%;
+		transition: transform 0.5s;
+		animation-name: won-button;
+		animation-duration: 4s;
+		animation-fill-mode: forwards;
+	}
+	
+.back-to-menu-won:hover
+	{
+		background-color: #006400;
+		transform: scale(1.1);
+		cursor: pointer;
+	}
+	
+.back-to-menu-won:active
+	{
+		background-color: #006400;
+	}
+	
+
+/*won 1millionen*/
+
+.won-1millionen
+	{
+		background-image: url('images/won 1millionen.jpeg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 100% 100%;
+	}
+	
+@keyframes won-1m
+	{
+		from {margin-top: -100px;}
+		to {margin-top: 325px;}
+	}
+
+@keyframes won1000000
+	{
+		from {margin-top: -500px;}
+		to {margin-top: 15px;}
+	}
+	
+@keyframes won-or-lost-button
+	{
+		from {margin-top: 2000px;}
+		to {margin-top: 25px;}
+	}
+
+.won-1m
+	{
+		font-size: 50px;
+		font-weight: bold;
+		color: #FFD700;
+		text-align: center;
+		animation-name: won-1m;
+		animation-duration: 4s;
+		animation-fill-mode: forwards;
+	}
+	
+.won1000000
+	{
+		font-size: 100px;
+		font-weight: bold;
+		color: #FFD700;
+		text-align: center;
+		animation-name: won1000000;
+		animation-duration: 4s;
+		animation-fill-mode: forwards;
+	}
+	
+.back-to-menu-1millionen
+	{
+		position: fixed;
+		font-weight: bold;
+		font-size: 40px;
+		color: black;
+		text-align: center;
+		text-decoration: none;
+		background-color: #FFD700;
+		border: none;
+		border-radius: 20px;
+		padding: 10px 10px;
+		width: 20%;
+		left: 40%;
+		transition: transform 0.5s;
+		animation-name: won-or-lost-button;
+		animation-duration: 4s;
+		animation-fill-mode: forwards;
+	}
+	
+.back-to-menu-1millionen:hover
+	{
+		background-color: #8B8000;
+		transform: scale(1.1);
+		cursor: pointer;
+	}
+	
+.back-to-menu-1millionen:active
+	{
+		background-color: #8B8000;
+	}
