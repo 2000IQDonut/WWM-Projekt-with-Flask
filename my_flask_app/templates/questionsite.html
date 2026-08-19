@@ -1,0 +1,80 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="/files/style.css">
+		<title>Wer wird Million&auml;r? - Frage 1</title>
+		<link rel="icon" type="image/x-icon" href="/files/images/logo.png">
+	</head>
+	<body class="background-questionsite{{id}}">
+
+
+		{% macro render_answer(answer_number, text, correct, last) %}
+			{% set link = '/won/' ~ (id) %}
+			{% if correct and not last %}
+				{% set link = '/question/' ~ (id + 1) %}
+			{% elif correct and last%}
+				{% set link = '/won/11' %}
+			{% endif %}
+			<td class="question-answer{{id}} background-color">
+				<a class="answer-link" href="{{link}}">
+					<span class="answer-number">{{answer_number}}</span> {{text}}
+				</a>
+			</td>
+		{% endmacro %}
+
+
+		<table class="border-spacing">
+			<thead>
+				<th class="question-answer{{id}} break background-color" colspan="2">{{question}}</th>
+			</thead>
+			<tr>
+			<td class="question-answer{{id}}" style="border: none"></td>
+			<td class="question-answer{{id}}" style="border: none"></td>
+			</tr>
+			<tr>
+				{{ render_answer("A", answer1, correctanswer == 1, id == 10) }}
+				{{ render_answer("B", answer2, correctanswer == 2, id == 10) }}
+			</tr>
+			<tr>
+				{{ render_answer("C", answer3, correctanswer == 3, id == 10) }}
+				{{ render_answer("D", answer4, correctanswer == 4, id == 10) }}
+			</tr>
+		</table>
+		
+		
+		<table>
+			<tr>
+				<td class="current-price {{'question-price' if id==10 else ''}}">€ 1Millionen</td>
+			</tr>
+			<tr>
+				<td class="current-price {{'question-price' if id==9 else 'earned-price' if id > 9 else '' }}">€ 500.000</td>
+			</tr>
+			<tr>
+				<td class="current-price {{'question-price' if id==8 else 'earned-price' if id > 8 else '' }}">€ 100.000</td>
+			</tr>
+			<tr>
+				<td class="current-price {{'question-price' if id==7 else 'earned-price' if id > 7 else '' }}">€ 50.000</td>
+			</tr>
+			<tr>
+				<td class="current-price {{'question-price' if id==6 else 'earned-price' if id > 6 else '' }}">€ 10.000</td>
+			</tr>
+			<tr>
+				<td class="current-price {{'question-price' if id==5 else 'earned-price' if id > 5 else '' }}">€ 5.000</td>
+			</tr>
+			<tr>
+				<td class="current-price {{'question-price' if id==4 else 'earned-price' if id > 4 else '' }}">€ 1.000</td>
+			</tr>
+			<tr>
+				<td class="current-price {{'question-price' if id==3 else 'earned-price' if id > 3 else '' }}">€ 500</td>
+			</tr>
+			<tr>
+				<td class="current-price {{'question-price' if id==2 else 'earned-price' if id > 2 else '' }}">€ 100</td>
+			</tr>
+			<tr>
+				<td class="current-price {{'question-price' if id==1 else 'earned-price' if id > 1 else '' }}">€ 50</td>
+			</tr>
+		</table>
+		
+		
+		<img class="logo-questionsite" src="/files/images/logo.png" alt="logo">
+	</body>
+</html>
